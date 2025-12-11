@@ -8,10 +8,10 @@ const MOCK_USERS = [
         id: 1,
         email: 'admin@alsoandpartners.com',
         password: 'admin123',
-        name: 'Dr. Ahmad Fauzi, S.H., M.H.',
+        name: 'Super Admin',
         role: 'admin',
         avatar: null,
-        title: 'Managing Partner'
+        title: 'Administrator'
     }
 ]
 
