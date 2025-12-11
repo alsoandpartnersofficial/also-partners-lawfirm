@@ -12,33 +12,6 @@ const MOCK_USERS = [
         role: 'admin',
         avatar: null,
         title: 'Managing Partner'
-    },
-    {
-        id: 2,
-        email: 'lawyer@alsoandpartners.com',
-        password: 'lawyer123',
-        name: 'Sarah Wijaya, S.H.',
-        role: 'lawyer',
-        avatar: null,
-        title: 'Senior Associate'
-    },
-    {
-        id: 3,
-        email: 'paralegal@alsoandpartners.com',
-        password: 'paralegal123',
-        name: 'Budi Santoso',
-        role: 'paralegal',
-        avatar: null,
-        title: 'Paralegal'
-    },
-    {
-        id: 4,
-        email: 'client@example.com',
-        password: 'client123',
-        name: 'PT. Maju Sejahtera',
-        role: 'client',
-        avatar: null,
-        title: 'Corporate Client'
     }
 ]
 

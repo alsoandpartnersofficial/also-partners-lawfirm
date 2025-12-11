@@ -29,17 +29,7 @@ export default function Login() {
         setIsLoading(false)
     }
 
-    const demoAccounts = [
-        { email: 'admin@alsoandpartners.com', password: 'admin123', role: 'Admin' },
-        { email: 'lawyer@alsoandpartners.com', password: 'lawyer123', role: 'Lawyer' },
-        { email: 'client@example.com', password: 'client123', role: 'Client' },
-    ]
 
-    const fillDemo = (account) => {
-        setEmail(account.email)
-        setPassword(account.password)
-        setError('')
-    }
 
     return (
         <div className="login-page">
@@ -160,21 +150,7 @@ export default function Login() {
                         </button>
                     </form>
 
-                    <div className="demo-section">
-                        <p className="demo-title">Akun Demo:</p>
-                        <div className="demo-accounts">
-                            {demoAccounts.map((account, index) => (
-                                <button
-                                    key={index}
-                                    className="demo-account-btn"
-                                    onClick={() => fillDemo(account)}
-                                >
-                                    <span className="demo-role">{account.role}</span>
-                                    <span className="demo-email">{account.email}</span>
-                                </button>
-                            ))}
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
