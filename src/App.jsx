@@ -17,6 +17,7 @@ import BillingDashboard from './pages/billing/BillingDashboard'
 import InvoiceForm from './pages/billing/InvoiceForm'
 import ResearchDashboard from './pages/research/ResearchDashboard'
 import ClientDashboard from './pages/portal/ClientDashboard'
+import UserManagement from './pages/UserManagement'
 import Settings from './pages/Settings'
 
 // CSS imports for pages
@@ -200,6 +201,15 @@ function AppRoutes() {
                 element={
                     <ProtectedRoute allowedRoles={['admin', 'lawyer']}>
                         <MainLayout><ResearchDashboard /></MainLayout>
+                    </ProtectedRoute>
+                }
+            />
+
+            <Route
+                path="/users"
+                element={
+                    <ProtectedRoute allowedRoles={['admin']}>
+                        <MainLayout><UserManagement /></MainLayout>
                     </ProtectedRoute>
                 }
             />

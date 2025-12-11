@@ -16,7 +16,8 @@ import {
     ChevronLeft,
     ChevronRight,
     Scale,
-    BookOpen
+    BookOpen,
+    UserCog
 } from 'lucide-react'
 import './Sidebar.css'
 
@@ -30,6 +31,7 @@ const menuItems = {
         { path: '/research', icon: Search, label: 'Riset Hukum' },
         { path: '/documents', icon: FileText, label: 'Dokumen' },
         { path: '/templates', icon: BookOpen, label: 'Template' },
+        { path: '/users', icon: UserCog, label: 'Manajemen User' },
         { path: '/settings', icon: Settings, label: 'Pengaturan' },
     ],
     lawyer: [

@@ -32,7 +32,20 @@ export function AuthProvider({ children }) {
         // Simulate API call
         await new Promise(resolve => setTimeout(resolve, 800))
 
-        const foundUser = MOCK_USERS.find(
+        // Get users from localStorage or use default
+        let registeredUsers = []
+        const savedUsers = localStorage.getItem('appUsers')
+
+        if (savedUsers) {
+            registeredUsers = JSON.parse(savedUsers)
+        } else {
+            // If no users in storage, use the default mock users (admin)
+            registeredUsers = MOCK_USERS
+            // Initialize storage with default admin if empty
+            localStorage.setItem('appUsers', JSON.stringify(MOCK_USERS))
+        }
+
+        const foundUser = registeredUsers.find(
             u => u.email === email && u.password === password
         )
 
